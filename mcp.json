@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-autonomous-dao-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "ABDAO"
+      },
+      "tools": [
+        {
+          "name": "verify_abdao_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat Autonomous DAO AI on Algorand."
+        },
+        {
+          "name": "execute_abdao_action",
+          "description": "Executes authenticated Governance state transition."
+        }
+      ]
+    }
+  }
+}
